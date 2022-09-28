@@ -1,12 +1,10 @@
 package BasicsOfJava;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AT07_staticmethod01 {
 
-    @Test
     public static void test11(){
-        System.out.println("this is static method");
+        System.out.println("This is Static Method");
     }
 }
-

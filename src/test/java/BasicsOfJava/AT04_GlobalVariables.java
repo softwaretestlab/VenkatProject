@@ -1,6 +1,6 @@
 package BasicsOfJava;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AT04_GlobalVariables {
     //global variables
@@ -10,14 +10,14 @@ public class AT04_GlobalVariables {
 
     @Test
     public void test05() {
-        //local variables
+        //local variablesss
         int l = 30;
         //data for this variable k is comming from the global variables
-        int k = i + j;
+        int k  = i+j;
         System.out.println("Value of k is : " + k); //output 30
         System.out.println("Value of k is : " + (k + l)); //output 60
-
     }
+
     @Test
     public void test06() {
         //local variables

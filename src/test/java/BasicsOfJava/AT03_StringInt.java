@@ -1,25 +1,27 @@
 package BasicsOfJava;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AT03_StringInt {
+
     @Test
-    public void test03() {
-        //local variables
+    public void test03(){
+        //declare local variables
         int i=10;
         int j=20;
-        int k = i+j;
-        //print on the console
+        int k = i+j; //op-->30
         System.out.println("Value of K is : "+k);
 
     }
+
     @Test
-    public void test04() {
+    public void test04(){
         //declare local variables
-        String name="Software TestLab";
-        String companyType=" Pty Ltd";
-        String FullName= name+companyType;
-        System.out.println("FullName of company is : "+FullName);
+        String test01 ="Software";
+        String test02 ="testlab";
+        String test03 = test01 + test02;
+        System.out.println("value of Test03 is : " + test03);
 
     }
+
 }
