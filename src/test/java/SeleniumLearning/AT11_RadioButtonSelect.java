@@ -26,27 +26,38 @@ public class AT11_RadioButtonSelect {
         //Navigate to HN website
         driver.get("http://www.echoecho.com/htmlforms10.htm");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        List<WebElement> RadioButtonList= driver.findElements(By.cssSelector("input[name^='radio1']"));
-        int RadioSize= RadioButtonList.size();
-        System.out.println("RadioSize : "+RadioSize); //3
+        List<WebElement> RadioButtonList = driver.findElements(By.cssSelector("input[name^='radio1']"));
+        int RadioSize = RadioButtonList.size();
+        System.out.println("RadioSize : " + RadioSize); //3
 // here we are implementing selenium concepts isDisplayed,isSelected and also clicking on
         //first radio button
-             for(int i=0; i<RadioSize;i++){
-                 //isDisplayed();  bollean -- true or false
-                boolean RadioBtnDisplayed= RadioButtonList.get(i).isDisplayed();
-                 System.out.println("RadioBtnDisplayed : "+RadioBtnDisplayed); //true
+//        for (int i = 0; i < RadioSize; i++) {
+//            //isDisplayed();  bollean -- true or false
+//            boolean RadioBtnDisplayed = RadioButtonList.get(i).isDisplayed();
+//            System.out.println("RadioBtnDisplayed : " + RadioBtnDisplayed); //true
+//
+//            //isSelected();
+//            boolean RadioBtnSelect = RadioButtonList.get(i).isSelected();
+//            System.out.println("Is RadioBtnSelect selected ? : " + RadioBtnSelect); //false
+//            if (RadioBtnSelect == false) {
+//                RadioButtonList.get(i).click();
+//
+//            }
+//            break;
+//
+//        }
+        // here we are getting attribute value and also clicking on first radio button
+        for (int i = 0; i < RadioSize; i++) {
+            // this is how we get attribute values
+            String Attval = RadioButtonList.get(i).getAttribute("type"); //radio
+            System.out.println("AttVal :" + Attval);
+            if (Attval.equalsIgnoreCase("radio")) {
+                RadioButtonList.get(i).click();
 
-                 //isSelected();
-                 boolean RadioBtnSelect=RadioButtonList.get(i).isSelected();
-                 System.out.println("Is RadioBtnSelect selected ? : "+RadioBtnSelect); //false
-                 if(RadioBtnSelect==false){
-                     RadioButtonList.get(i).click();
-
-                 }
-                 break;
-
-             }
+            }
+            break;
+        }
     }
 
-
 }
+
