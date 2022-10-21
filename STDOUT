@@ -1,0 +1,12 @@
+
+@homepage @SmokeTesting
+Scenario: Navigate to HN Website                              [90m# src/test/java/FeatureFile/FF01_NavigateToHNwebsite.feature:8[0m
+  [32mGiven [0m[32mopen browser and enter url and navigate to HN website[0m [90m# StepDefinations.SD01_NavigateToHNwebsite.open_browser_and_enter_url_and_navigate_to_hn_website()[0m
+  [31mThen [0m[31mget title and assert[0m                                   [90m# StepDefinations.SD01_NavigateToHNwebsite.get_title_and_assert()[0m
+      [31morg.junit.ComparisonFailure: expected:<[Computers, Electrical, Furniture & Bedding | Harvey Norman Australia]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at SeleniumCode.AT01_NavigateNTitleAssertScreenshot.AssertTitle(AT01_NavigateNTitleAssertScreenshot.java:30)
+	at StepDefinations.SD01_NavigateToHNwebsite.get_title_and_assert(SD01_NavigateToHNwebsite.java:16)
+	at ✽.get title and assert(file:///C:/Users/softw/IdeaProjects/VenkatProject/src/test/java/FeatureFile/FF01_NavigateToHNwebsite.feature:10)
+[0m

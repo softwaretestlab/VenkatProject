@@ -1,0 +1,66 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-21T03:46:57.811Z",
+        "line": 8,
+        "name": "Navigate to HN Website",
+        "description": "",
+        "id": "hn-homepage;navigate-to-hn-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5069998000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "open browser and enter url and navigate to HN website",
+            "match": {
+              "location": "StepDefinations.SD01_NavigateToHNwebsite.open_browser_and_enter_url_and_navigate_to_hn_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Computers, Electrical, Furniture \u0026 Bedding | Harvey Norman Australia]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat SeleniumCode.AT01_NavigateNTitleAssertScreenshot.AssertTitle(AT01_NavigateNTitleAssertScreenshot.java:30)\r\n\tat StepDefinations.SD01_NavigateToHNwebsite.get_title_and_assert(SD01_NavigateToHNwebsite.java:16)\r\n\tat ✽.get title and assert(file:///C:/Users/softw/IdeaProjects/VenkatProject/src/test/java/FeatureFile/FF01_NavigateToHNwebsite.feature:10)\r\n",
+              "duration": 262739400,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "get title and assert",
+            "match": {
+              "location": "StepDefinations.SD01_NavigateToHNwebsite.get_title_and_assert()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@homepage"
+          },
+          {
+            "name": "@SmokeTesting"
+          }
+        ]
+      }
+    ],
+    "name": "HN Homepage",
+    "description": "",
+    "id": "hn-homepage",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeatureFile/FF01_NavigateToHNwebsite.feature",
+    "tags": [
+      {
+        "name": "@homepage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
