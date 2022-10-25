@@ -19,4 +19,11 @@ public class OpenBrowser {
        // driver.get("https://www.thegoodguys.com.au/");
         driver.get(url);
     }
+
+    public static void CloseBrowser(){
+        driver.close();
+    }
+    public static void QuitDriver(){
+        driver.quit();
+    }
 }
